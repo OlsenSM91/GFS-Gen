@@ -1,5 +1,7 @@
 # Gregg's Flow Sheet Generator
 
+![Screenshot 2024-12-22 142926](https://github.com/user-attachments/assets/78f470e8-d733-40f3-af94-10fc82304a92)
+
 **Gregg's Flow Sheet Generator** is a desktop application designed to streamline the creation and management of flow sheets for veterinary use. It simplifies data entry, highlights important information, and generates Excel-based flow charts.
 
 ---
