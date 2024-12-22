@@ -1,6 +1,8 @@
 # Gregg's Flow Sheet Generator
 
-**Gregg's Flow Sheet Generator** is a desktop application designed to streamline the creation and management of flow sheets for veterinary or medical use. It simplifies data entry, highlights important information, and generates Excel-based flow charts.
+**Gregg's Flow Sheet Generator** is a desktop application designed to streamline the creation and management of flow sheets for veterinary use. It simplifies data entry, highlights important information, and generates Excel-based flow charts.
+
+---
 
 ## Features
 
@@ -9,6 +11,8 @@
 - **Customizable Fields**: Easily add, edit, and clear entries for treatments, procedures, and medications.
 - **Save and Share**: Save generated flow sheets in Excel format for easy distribution.
 - **Integrated Placeholder Management**: Fields include placeholders for clear guidance during data entry.
+
+---
 
 ## Getting Started
 
@@ -37,11 +41,41 @@
    python app.py
    ```
 
-### Using the Application
+---
+
+## Compiling the Application
+
+You can package the application as a standalone executable using **PyInstaller**.
+
+### Steps to Compile:
+
+1. Install PyInstaller:
+   ```bash
+   pip install pyinstaller
+   ```
+
+2. Ensure the `build.spec` file is in the project directory. If not, create one using:
+   ```bash
+   pyinstaller app.py --name "GreggsFlowSheetGenerator" --onefile --noconsole
+   ```
+
+3. Compile the application:
+   ```bash
+   pyinstaller build.spec
+   ```
+
+4. After the build is complete, the executable will be available in the `dist/` directory. The compiled executable will include:
+   - `app.py`
+   - `appgui.py`
+   - Supporting assets (e.g., `template.xlsx`, `icon.ico`)
+
+---
+
+## Using the Application
 
 1. **Launch the Application**:
-   Run the `app.py` script to open the graphical interface.
-   
+   Run the executable or `app.py` to open the graphical interface.
+
 2. **Enter Data**:
    Fill in the required fields for patient information, treatments, medications, and procedures.
 
@@ -51,6 +85,8 @@
 4. **Save & Open**:
    Choose a file location to save your flow sheet. The application will automatically open the saved file for review.
 
+---
+
 ## File Structure
 
 - `app.py`: Main entry point of the application.
@@ -58,24 +94,14 @@
 - `build.spec`: PyInstaller configuration for packaging the application.
 - `file_version_info.txt`: Metadata for the application build.
 
-## Packaging the Application
-
-This project uses **PyInstaller** for packaging:
-
-1. Install PyInstaller:
-   ```bash
-   pip install pyinstaller
-   ```
-
-2. Build the executable:
-   ```bash
-   pyinstaller --onefile --noconsole build.spec
-   ```
+---
 
 ## Known Issues
 
-- Ensure the `template.xlsx` file is placed in the same directory as the executable.
+- Ensure the `template.xlsx` file and `icon.ico` file is placed in the same directory as the executable.
 - Placeholder text must be cleared before entering actual data to ensure proper flow sheet generation.
+
+---
 
 ## Version Information
 
@@ -83,9 +109,13 @@ This project uses **PyInstaller** for packaging:
 - **Company**: G&H Dev
 - **Description**: Flow sheet generation tool
 
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
 
 ## Acknowledgments
 
