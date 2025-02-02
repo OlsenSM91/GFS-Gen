@@ -7,7 +7,8 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ('template.xlsx', '.'),
+        ('13template.xlsx', '.'),
+        ('24template.xlsx', '.'),
         ('icon.ico', '.'),
     ],
     hiddenimports=['PIL._tkinter_finder'],
